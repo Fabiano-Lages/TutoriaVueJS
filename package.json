@@ -1,0 +1,17 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "noejs",
+    "node",
+    "vuejs",
+    "vue"
+  ],
+  "author": "Fabiano Teixeira Lages",
+  "license": "ISC",
+  "description": "Teste de VueJS"
+}

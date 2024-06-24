@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tutorial de Vue</title>
+        <link rel="stylesheet" href="./assets/style.css" />
+        <script src="https://unpkg.com/vue@3.4.30/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="nav-bar"></div>
+
+            <div class="cart">Carrinho {{ cart.length }}</div>
+            <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+        </div>
+        
+        <!-- Import App -->
+        <script type="text/javascript" src="main.js"></script>
+        <!-- Import Component -->
+        <script type="text/javascript" src="components/ProductDisplay.js"></script>
+        <script type="text/javascript" src="components/ReviewForm.js"></script>
+        <script type="text/javascript" src="components/ReviewList.js"></script>
+
+        <!-- Mount App -->
+        <script type="text/javascript">
+            const mountedApp = app.mount("#app");
+        </script>
+    </body>
+</html>
